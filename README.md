@@ -29,7 +29,7 @@ The resulting curve matches Fig. 7 of the original paper within numerical tolera
 ## 🏗 Installation
 
 ```bash
-git clone https://github.com/<you>/gru_smnist_lyap.git
+git clone https://github.com/NeuronalDynamics/gru_smnist_lyap.git
 cd gru_smnist_lyap
 conda env create -f environment.yml         # or: pip install -r requirements.txt
 conda activate smnist_lyap
