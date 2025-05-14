@@ -29,10 +29,10 @@ The resulting curve matches Fig. 7 of the original paper within numerical tolera
 ## 🏗 Installation
 
 ```bash
-git clone https://github.com/NeuronalDynamics/gru_smnist_lyap.git
-cd gru_smnist_lyap
+git clone https://github.com/NeuronalDynamics/Reproduced_Vogt_2024.git
+cd Reproduced_Vogt_2024
 conda env create -f environment.yml         # or: pip install -r requirements.txt
-conda activate smnist_lyap
+conda activate Reproduced_Vogt_2024
 ```
 
 *Tested on Python 3.10 / PyTorch 2.2 (CUDA 12.1).*
@@ -43,10 +43,10 @@ conda activate smnist_lyap
 
 ```bash
 # single run (fast)
-python gru_smnist_lyap_repro.py --epochs 5 --trials 1
+python GRU_LE.py --epochs 5 --trials 1
 
 # faithful reproduction (≈ 75 min on RTX 4090)
-python gru_smnist_lyap_repro.py --epochs 10 --hidden 512 --trials 100
+python GRU_LE.py --epochs 10 --hidden 512 --trials 100
 ```
 
 Outputs:
