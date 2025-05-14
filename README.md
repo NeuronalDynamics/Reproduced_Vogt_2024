@@ -106,8 +106,6 @@ This project is released under the MIT License — see `LICENSE` for details.
 * PyTorch team for first-class autograd ([PyTorch][9]).
 * Continuous-QR literature for robust LE computation ([ScienceDirect][6]).
 
-Enjoy exploring chaos at 28 pixels per tick!
-
 [1]: https://arxiv.org/abs/2204.04876?utm_source=chatgpt.com "Lyapunov-Guided Representation of Recurrent Neural Network ..."
 [2]: https://link.aps.org/doi/10.1103/PhysRevX.12.011011?utm_source=chatgpt.com "Theory of Gating in Recurrent Neural Networks | Phys. Rev. X"
 [3]: https://medium.com/the-artificial-impostor/notes-understanding-tensorflow-part-2-f7e5ece849f5?utm_source=chatgpt.com "[Tensorflow] Building RNN Models to Solve Sequential MNIST"
