@@ -67,17 +67,6 @@ lyap_spectrum_mean.png        # publication-ready plot
 
 ---
 
-## 📂 File structure
-
-```
-.
-├─ gru_smnist_lyap_repro.py   ← main script (≈ 400 LoC, self-contained)
-├─ environment.yml            ← conda spec
-└─ README.md                  ← you are here
-```
-
----
-
 ## 📚 Background & further reading
 
 * SMNIST benchmark description ([PyTorch Forums][10])
