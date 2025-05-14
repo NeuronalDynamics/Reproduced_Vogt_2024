@@ -61,7 +61,7 @@ lyap_spectrum_mean.png        # publication-ready plot
 
 ## 📈 Result snapshot
 
-![Mean Lyapunov spectrum](lyap_spectrum_mean.png)
+![Mean Lyapunov spectrum](https://raw.githubusercontent.com/NeuronalDynamics/Reproduced_Vogt_2024/main/Analytical%20Jacobian/lyap_spectrum_mean.png)
 
 *Exponents are sorted λ₁ ≥ λ₂ ≥ … ≥ λ\_H; λ₁ ≈ 0 indicates critical dynamics.*
 
