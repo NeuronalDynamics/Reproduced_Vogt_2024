@@ -29,10 +29,10 @@ The resulting curve matches Fig. 7 of the original paper within numerical tolera
 ## 🏗 Installation
 
 ```bash
-git clone https://github.com/NeuronalDynamics/gru_smnist_lyap.git
-cd gru_smnist_lyap
+git clone https://github.com/NeuronalDynamics/Reproduced_Vogt_2024.git
+cd Reproduced_Vogt_2024
 conda env create -f environment.yml         # or: pip install -r requirements.txt
-conda activate smnist_lyap
+conda activate Reproduced_Vogt_2024
 ```
 
 *Tested on Python 3.10 / PyTorch 2.2 (CUDA 12.1).*
@@ -43,10 +43,10 @@ conda activate smnist_lyap
 
 ```bash
 # single run (fast)
-python gru_smnist_lyap_repro.py --epochs 5 --trials 1
+python GRU_LE.py --epochs 5 --trials 1
 
 # faithful reproduction (≈ 75 min on RTX 4090)
-python gru_smnist_lyap_repro.py --epochs 10 --hidden 512 --trials 100
+python GRU_LE.py --epochs 10 --hidden 512 --trials 100
 ```
 
 Outputs:
@@ -61,20 +61,9 @@ lyap_spectrum_mean.png        # publication-ready plot
 
 ## 📈 Result snapshot
 
-![Mean Lyapunov spectrum](lyap_spectrum_mean.png)
+![Mean Lyapunov spectrum](https://raw.githubusercontent.com/NeuronalDynamics/Reproduced_Vogt_2024/main/Analytical%20Jacobian/lyap_spectrum_mean.png)
 
 *Exponents are sorted λ₁ ≥ λ₂ ≥ … ≥ λ\_H; λ₁ ≈ 0 indicates critical dynamics.*
-
----
-
-## 📂 File structure
-
-```
-.
-├─ gru_smnist_lyap_repro.py   ← main script (≈ 400 LoC, self-contained)
-├─ environment.yml            ← conda spec
-└─ README.md                  ← you are here
-```
 
 ---
 
@@ -116,8 +105,6 @@ This project is released under the MIT License — see `LICENSE` for details.
 * Original experiment by **Vogt, Zheng & Shlizerman** ([arXiv][1]).
 * PyTorch team for first-class autograd ([PyTorch][9]).
 * Continuous-QR literature for robust LE computation ([ScienceDirect][6]).
-
-Enjoy exploring chaos at 28 pixels per tick!
 
 [1]: https://arxiv.org/abs/2204.04876?utm_source=chatgpt.com "Lyapunov-Guided Representation of Recurrent Neural Network ..."
 [2]: https://link.aps.org/doi/10.1103/PhysRevX.12.011011?utm_source=chatgpt.com "Theory of Gating in Recurrent Neural Networks | Phys. Rev. X"
