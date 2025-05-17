@@ -1,9 +1,3 @@
-Below is a drop-in replacement for your **README.md** that matches the *current* Python script exactly—filenames, default hyper-parameters, and available CLI flags.
-Feel free to copy-paste it over the existing file.
-
----
-
-
 # Reproduced_Vogt_2024 – SMNIST GRU Lyapunov Reproduction
 
 ## ✨ What this repo does
