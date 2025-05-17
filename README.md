@@ -32,7 +32,7 @@ The resulting curve matches Fig. 7 of the original paper within numerical tolera
 git clone https://github.com/NeuronalDynamics/Reproduced_Vogt_2024.git
 cd Reproduced_Vogt_2024
 conda env create -f environment.yml         # or: pip install -r requirements.txt
-conda activate Reproduced_Vogt_2024
+conda activate GRU_LS
 ```
 
 *Tested on Python 3.10 / PyTorch 2.2 (CUDA 12.1).*
