@@ -11,7 +11,7 @@ This project re-implements—fully from scratch—the central experiment of **Vo
 The pipeline
 
 1. **trains** a GRU with *uniform* weight initialisation  
-   \(w_{ij} \sim\mathcal U(-p,\,p)\) where \(p\in[0.1,3.0]\) is drawn **per trial**;
+   $\(w_{ij} \sim\mathcal U(-p,\,p)\) where \(p\in[0.1,3.0]\)$ is drawn **per trial**;
 2. reaches competitive SMNIST validation accuracy in ≤ 10 epochs;
 3. computes the **full Lyapunov spectrum** via reduced-QR on Jacobians obtained with  
    `torch.autograd.functional.jacobian`;
@@ -124,18 +124,3 @@ MIT – see `LICENSE`.
 * **Vogt, Zheng & Shlizerman** for the original insight.
 * PyTorch devs for the `autograd.functional` API.
 
-```
-
----
-
-### What changed compared to your previous README?
-
-* **Filename consistency** – now points to `gru_smnist_lyap_repro.py`.
-* **Full parameter table** with *all* relevant defaults (`--batch`, `--lr`, etc.).
-* Clarified that `init_uniform` (no bias trick) is the active initialiser.
-* Added driver, warm-up and QR-tolerance details so the documentation really is self-contained.
-* Updated quick-start to reflect script name and default loops.
-* Minor wording clean-up; all links kept intact.
-
-Let me know if you'd like any further tweaks (e.g. re-ordering sections, adding badges, or expanding the background list).
-```
