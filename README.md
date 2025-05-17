@@ -5,7 +5,7 @@ This project re-implements—fully from scratch—the central experiment of **Vo
 The pipeline
 
 1. **trains** a GRU with *uniform* weight initialisation  
-   $\(w_{ij} \sim\mathcal U(-p,\,p)\) where \(p\in[0.1,3.0]\)$ is drawn **per trial**;
+   $\(w_{ij} \sim\mathcal U(-p,\,p)\)$ where $\(p\in[0.1,3.0]\)$ is drawn **per trial**;
 2. reaches competitive SMNIST validation accuracy in ≤ 10 epochs;
 3. computes the **full Lyapunov spectrum** via reduced-QR on Jacobians obtained with  
    `torch.autograd.functional.jacobian`;
