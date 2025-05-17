@@ -3,7 +3,7 @@ Feel free to copy-paste it over the existing file.
 
 ---
 
-````markdown
+
 # Reproduced_Vogt_2024 – SMNIST GRU Lyapunov Reproduction
 
 ## ✨ What this repo does
@@ -24,7 +24,6 @@ All intermediate and final results (`*.npy`, `*.png`) are saved to disk.
 
 ## 🏗 Installation (tested on Python 3.10 / PyTorch 2.2 + CUDA 12.1)
 
-```bash
 git clone https://github.com/NeuronalDynamics/Reproduced_Vogt_2024.git
 cd Reproduced_Vogt_2024
 
@@ -36,7 +35,7 @@ conda activate GRU_LS
 
 # Pip
 pip install -r requirements.txt
-````
+
 
 ---
 
