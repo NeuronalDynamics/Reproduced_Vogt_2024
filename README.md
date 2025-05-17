@@ -4,7 +4,7 @@
 This repository reproduces — end-to-end and from scratch — the key experiment of **Vogt *et al.* (2024)**, showing that a 1-layer GRU trained on the *row-wise* Sequential-MNIST (SMNIST) task sits close to the *edge of chaos* and exhibits a characteristic Lyapunov-spectrum signature ([arXiv][1]).
 Our script
 
-* trains a GRU with orthogonal weight initialisation and a bias trick that nudges the reset / update gates toward marginal stability ([Physical Review][2]),
+* trains a GRU with uniform weight initialisation and a bias trick that nudges the reset / update gates toward marginal stability ([Physical Review][2]),
 * reaches ≥ 98 % validation accuracy on SMNIST (28 time-steps) ([Medium][3], [Cross Validated][4]),
 * computes the **full Lyapunov spectrum** via a reduced-QR algorithm applied to Jacobians obtained **either analytically or with `torch.autograd.functional.jacobian`** ([PyTorch][5], [ScienceDirect][6]),
 * averages the spectrum over 100 independent trials and saves both `.npy` data and a high-resolution `.png` plot.
